@@ -1,23 +1,17 @@
+
 #include <stdio.h>
 #include <stdint.h>
-int test(){
-    return 5;
+
+float thuong(uint8_t a, uint8_t b){
+    if (b == 0)
+        printf("ERROR!! Mau bang 0\n");
+    return (float)a/b;
 }
 
-int var = 5;
 
-void hienThi(uint16_t id, char* ten, uint8_t tuoi){
-
-    printf("ID: %d, TEN: %s, TUOI: %d\n", id, ten, tuoi);
-
-}
 int main() {
-    
-    // printf("ID: 1001, TEN: HOANG, TUOI: 19\n");
-    // printf("ID: 1001, TEN: TUAN, TUOI: 14\n");
-    // printf("ID: 1001, TEN: QUAN, TUOI: 148\n");
-    // printf("ID: 1001, TEN: NAM, TUOI: 17\n");
-    hienThi(1000, "Hoang", 19);
+
+    printf("Thuogn a / b = %f\n", thuong(7, 8));
     return 0;
 }
 
