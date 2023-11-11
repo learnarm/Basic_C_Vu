@@ -5,7 +5,9 @@ uint8_t var; // 8 bit = 1 byte
 
 
 int main() {
-  
-  printf("size: %lu byte", sizeof(var));
+  var = 256;
+  printf("size: %lu byte\n", sizeof(var));
+
+  printf("var = %d\n", var);
   return 0;
 }
