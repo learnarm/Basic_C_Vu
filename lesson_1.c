@@ -6,6 +6,6 @@ uint8_t var;
 
 int main() {
   
-  printf("size: %lu byte", sizeof(var));
+  printf("size: %lu by", sizeof(var));
   return 0;
 }
